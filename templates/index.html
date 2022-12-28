@@ -1,0 +1,30 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<body>
+  <style>
+    body{
+      background-image: url({{url_for('static',filename="a.jpg")}});
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  </style>
+</body>
+<center><br><br><br><br><br>
+
+  <h1 style="color:00FFFF;font-family:Bernard MT Condensed"><u>Fish Weight Predictor</u></h1>
+
+  <a href="{{  url_for('index')  }}"><button type="button" class="btn btn-primary btn-lg">Home</button></a>
+  <a href="{{  url_for('add')  }}"><button type="button" class="btn btn-primary btn-lg">Inputs</button></a>
+
+{% block container %}
+
+{%endblock%}
+
+{%block header%}
+
+{%endblock%}
+
+</center>

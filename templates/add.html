@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+
+
+{% block container %}<br><br><br>
+<form action="{{url_for('add')}}" method="post">
+<b style='color:#000000'>Species Name:</b><input type="number" name="y1" placeholder="0-6"><br><br>
+<b style='color:#000000'>Vertical Length:</b><input type="number" name="y2" placeholder="0-70"><br><br>
+<b style='color:#000000'>Diagonal Length:</b><input type="number" name="y3" placeholder="0-70"><br><br>
+<b style='color:#000000'>Cross Length :</b><input type="number" name="y4" placeholder="0-70"><br><br>
+<b style='color:#000000'>Fish Height  :</b><input type="number" name="y5" placeholder="0-20"><br><br>
+<b style='color:#000000'>Fish Width :</b><input type="number" name="y6" placeholder="0-10"><br><br>
+<input type="submit" value="Save" style="color:green">
+</form>
+{%endblock%}
